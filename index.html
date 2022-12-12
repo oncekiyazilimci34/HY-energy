@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Quicksand&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            /* position: absolute; */
+        }
+        .logo-item {
+            width: 70%;
+        }
+        .resim{
+            background-image: url(img/american-public-power-association-XGAZzyLzn18-unsplash\ 1\ \(1\).png);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+            height: 1100px;
+        
+        }
+        .enj{
+            
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 50px; 
+            height: 50%;
+            width: 100%;
+        }
+        .ok{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            width: 50px;
+            height: 46.5px;
+            top: 818px;
+            left: 935px;
+
+        }
+        .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .info-text{
+            text-align: center;
+            font-size: 22px;
+            font-family:"Quicksand",sans-serif; ;
+            line-height: 1.5;
+            width: 50%;
+            margin-top: 50px;
+            /* margin-bottom: 200px; */
+            margin-bottom: 1rem;
+            /* box-sizing: border-box; */
+           
+          
+        }
+        .info-text-video{
+            z-index: 2;
+            position: absolute;
+            display: flex;
+            height: 4rem;
+            width: 4rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+           
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+           
+           
+        
+
+        }
+        .info-video{
+            height: 700px;
+            width: 1130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 10;
+        }
+    
+        .simsek{
+            height:150px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .yaprak{
+            position: absolute;
+            width: auto;
+            right: 10px;
+            bottom: 0;
+            z-index: -1;
+        }
+        .my-10{
+            text-align: center;
+            font-family:"Quicksand",sans-serif ;
+            font-size: 72px;
+            font-weight: 600;
+            color: #80BC00;
+           
+        }
+      
+        .text-pr{
+
+           height: 160px;
+           width: 604px;
+           color: #80BC00;
+           left: 0;
+           line-height: 30px;
+           font-size: 16px;
+           font-family:"Quicksand",sans-serif; 
+         
+          
+        }
+     
+       
+        
+        /* .surec{
+            position: relative;
+            left: 255px;
+            height: 230px;
+            top: 50px;
+            
+            
+        } */
+      
+        /* .surec-panel{
+            margin-left: 2rem;
+            margin-right: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 5rem;
+           
+        } */
+        /* .surec-content{ */
+            /* height: 200px; */
+            /* width: 750px;
+            padding: 2.25rem;
+            background: #f2f8e5;
+            border-radius: 0,75rem; 
+            */
+          
+        /* } */
+        .saga-ok1{
+            position: absolute;
+            left: 48%;
+            bottom: -60%;
+            z-index: -1;
+        } 
+        .saga-ok{
+           
+           position: absolute;
+           left: 47%;
+           bottom: -76%;
+           z-index: -1;
+           
+           
+       }
+        .panel__icon {
+          position: absolute;
+          left: 40%;
+          bottom: -80%;}
+       
+        .surec{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            
+        }
+        .surec-content{
+          width: 1440px;
+         
+        }
+        .surec-pr{
+           
+            background: #f2f8e5;
+            border-radius: 0.75rem;
+            padding: 2.25rem;
+            display: inline-block;
+            
+        }
+      
+        .container_surec-pr {
+           width: 50%;
+           position: relative;
+           
+        }
+        
+        .container_surec-pr2{
+           float: right;
+           position: relative;
+        }
+        .saga-ok3{
+           position: absolute;
+           left: -10%;
+           bottom: -76%;
+           z-index: -10;
+           width: 100%;
+          
+           
+        }
+        .main0{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 1300px;
+
+        }
+       
+        .main3{
+          text-align: center;
+          font-family:"Quicksand",sans-serif ;
+          font-size: 72px;
+          color: #80BC00;
+        }
+        .main4{
+          width: 1100px;
+          font-size: 22px;
+         
+        }
+        .container{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        
+          
+         
+        }
+        .proje--destek{
+          height: 400px;
+         width: 1300px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+        }
+        .cron{
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          height:270px;
+          width: 850px;
+          background: #7B98CE;
+          border-radius: 30px;
+
+        }
+        .sn-pr{
+         
+         text-align: center;
+         font-size: 48px;
+         color: #f2f8e5;
+         line-height: 60px
+        }
+        .simsek1{
+          z-index: -1;
+          position: absolute;
+          left: 85px;
+          top: -50px;
+        }
+
+        .yaprak1{
+          z-index: -1;
+          position: absolute;
+          bottom: -30px;
+          right: 80px;
+        
+
+        }
+        .flex{
+          height: 200px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .prj73{
+          position: absolute;
+          font-size: 72px;
+          font-family:"Quicksand",sans-serif ;
+          color: #80BC00;
+          margin: 48px 0 ;
+          
+        }
+        .w-prj-full{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+         margin: 160px 0px 0px;
+        }
+        .w-full{
+          position: relative;
+          width: 1200px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          
+        }
+        .prj54{
+          width: 500px;
+          height: 650px;
+          border: 5px solid #fff100;
+          border-radius: 50px;
+        }
+        .prj12{
+         
+          width: 500px;
+          height: 650px;
+          border: 5px solid #fff100;
+          border-radius: 30px;
+        }
+        .cardprj{
+          
+          text-align: center;
+          color: #80BC00;
+          font-size: 40px;
+          letter-spacing: 0.5rem;
+          font-family:"Quicksand",sans-serif ;
+          font-weight: 800;
+          margin-top: 35%;
+
+        }
+        .fbj{
+          position: absolute;
+          left: 150px;
+          top: -28%;
+
+        }
+        .fbj34{
+          position: absolute;
+          left: 825px;
+          top: -28%;
+        }
+        .compi{ 
+
+         font-size: 20px;
+         width: 70%;
+         padding: 10px 20px;
+         border-color: transparent;
+         border-bottom: 1px solid #80BC00;
+         font-size: 25px;
+         background: transparent;
+         border-bottom-width: 3px;
+         margin-top: 20%;
+         right: 20%;
+          
+        }
+        .ilce{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .buton--d{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .buton{
+          background: #80BC00;
+          margin-top: 25%;
+          border-radius: 10px;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+          color: #f2f8e5;
+          border-color: #f2f8e5;
+        }
+       
+        .son{
+          background: #2d2d2d;
+          margin: 112px 0px 0px;
+          padding: 48px 0px;
+        }
+        .end{
+          justify-content: space-between;
+          align-items: center ;
+          display: flex;
+         
+
+        }
+        .footer--iey--logo{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 35%;
+          height: 250px;
+          margin: 0px 181.5px ;
+          padding: 0px 96px;
+          
+        }
+        .logo1{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          padding: 0px 40px 0px 0px;
+          margin: 0px 40px 0px 0px ;
+          border-right-width: 1px;
+          border-color: #fff;
+          
+        }
+        
+        
+        .footer--iey--linkler{
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column;
+         width: 35%;
+         padding: 8px;
+        
+        }
+        .satır{
+          color: #fff;
+          font-size: 22px;
+          list-style-type:none;
+          line-height: 50px;
+          padding-left: 5rem;
+         
+        
+        }
+        .line{
+          
+          padding-right: 2.5rem;
+          margin-right: 1.5rem;
+        }
+      
+        
+       
+    
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="feb">
+        <div class="resim">
+            <div class="logo">
+                <div class="logo-item">
+                <img src="img/Logo (2).png"  width:190px alt="">
+                </div>
+        
+            </div>
+            
+            <div class="enj">
+                <img src="img/Frame (1).png" alt="">
+    
+            </div>
+
+        </div>  
+       
+      
+    </div>
+</header>
+
+<section>
+    <div class="info">
+        <div class="info-text">
+          <p>
+            Yaklaşık bir asırdır meydana gelen savaş, doğal afet, çatışma, iklim değişikliği ve
+            bunlara bağlı olarak sosyo-ekonomik krizlerin boyutu öylesine artmış ve değişmiştir ki,
+            halihazırda insani yardım faaliyetlerine devam eden geleneksel kurumların geleneksel 
+            anlayış ve yöntemleri yetersiz kalmaya başlamıştır.
+          </p>
+          <br>
+          <p>
+            İnsani yardım faaliyetlerinde insan sayısı fazlalaşmasına rağmen yardım fonları zamanla
+             azalmakta ve bu nedenle sorunların çözümü her geçen gün biraz daha zorlaşmaktadır. 
+             Tek seferlik veya kısa vadeli çözümler dışında artık kalıcı çözümler üretilmesi zorunlu hale gelmiştir. 
+             İyilik Enerjinle Yayılsın projesi de bu kalıcı çözümler için ortaya çıkmış bir projedir
+          </p>
+           
+        
+        </div>
+        
+    </div>
+    <div class="main">
+      <div class="info-video">
+        <img src="img/Image.png" alt="" >
+        <div class="simsek">
+            <img src="img/Vector.png" alt="">
+        </div>
+        <div class="yaprak">
+            <img src="img/Vector (1).png" alt="">
+        </div> 
+        <div class="info-text-video">
+            <img src="img/Open.png" alt="">
+
+        </div>
+      </div>
+    </div>
+</section>
+<section class="my">
+    <h2 class="my-10">PROJE SÜRECİ</h2>
+    
+     <div class="surec">
+        <div class="surec-content">
+           <div class="container_surec-pr">
+               <div class="surec-pr">
+                 <p class="text-pr">
+                    İyilik Enerjinle Yayılsın Projesi zekât verilebilen yetim, eğitim ve diğer insani yardım
+                    faaliyetlerine sadaka-i câriye oluşturan bir sistemdir. Projenin ilk hedefi dünya çapında 
+                    25 ve Türkiye’de 25 proje olmak üzere toplam 50 yardım projesine sürdürülebilir yardım fonu oluşturmaktadır.
+                 </p>
+               </div>
+              <div class="surec-panel">
+               <div class="saga-ok1">
+                 <img src="img/Line 23.png" alt="">
+               </div>
+
+               <div class="panel__icon">
+                 <img src="img/Frame (2).png" alt="">
+               </div>
+
+               <div class="saga-ok">
+                 <img  src="img/Line 24.png" alt=""> 
+               </div>
+              </div>
+               
+           </div>
+            
+             
+          <div class="surec-panel">
+        </div> 
+        </div>
+     </div>
+
+     <div class="surec">
+        <div class="surec-content">
+           <div class="container_surec-pr2">
+               <div class="surec-pr">
+                 <p class="text-pr">
+                    Her bir proje için 1 Megavat (MW) elektrik enerjisi yatırımı ile yurtiçi ve yurtdışında hâl-i hazırda devam etmekte olan insani yardım faaliyetlerinin yıllarca verimli bir şekilde karşılanması planlanmaktadır.
+                 </p>
+               </div>
+              <div class="surec-panel">
+               <div class="saga-ok1">
+                 <img src="img/Line 23.png" alt="">
+               </div>
+
+               <div class="panel__icon">
+                 <img src="img/Frame (2).png" alt="">
+               </div>
+
+               <div class="saga-ok3">
+                 <img  src="img/Line 24.png " alt=""> 
+               </div>
+              </div>
+               
+           </div>
+            
+             
+          <div class="surec-panel">
+        </div> 
+        </div>
+     </div>
+
+         
+     <div class="surec">
+        <div class="surec-content">
+           <div class="container_surec-pr">
+               <div class="surec-pr">
+                 <p class="text-pr">
+                  1 Megavat enerji yatırımının değeri 1.250.000.USD olup 50 Megavat yatırımın toplam maliyeti 62.500.000.USD’dir.
+                 </p>
+               </div>
+              <div class="surec-panel">
+               <div class="saga-ok1">
+                 <img src="img/Line 23.png" alt="">
+               </div>
+
+               <div class="panel__icon">
+                 <img src="img/Frame (2).png" alt="">
+               </div>
+
+               <div class="saga-ok">
+                 <img  src="img/Line 24.png" alt=""> 
+               </div>
+              </div>
+               
+           </div>
+            
+             
+          <div class="surec-panel">
+        </div> 
+        </div>
+     </div>
+
+     <div class="surec">
+        <div class="surec-content">
+           <div class="container_surec-pr2">
+               <div class="surec-pr">
+                 <p class="text-pr">
+                  Devlet alım garantisiyle 1 Megavat enerji yatırımından elde edilecek sadaka-i câriye her ay 17.600.USD ve yıllık 211.000.USD’dir.
+                 </p>
+               </div>
+              <div class="surec-panel">
+               <div class="saga-ok1">
+                 <img src="img/Line 23.png" alt="">
+               </div>
+
+               <div class="panel__icon">
+                 <img src="img/Frame (2).png" alt="">
+               </div>
+
+               <div class="saga-ok3">
+                 <img  src="img/Line 24.png" alt=""> 
+               </div>
+              </div>
+               
+           </div>
+            
+             
+          <div class="surec-panel">
+        </div> 
+        </div>
+     </div>
+        
+     <div class="surec">
+        <div class="surec-content">
+           <div class="container_surec-pr">
+               <div class="surec-pr">
+                 <p class="text-pr">
+                  50 Megavat enerji yatırımının sağladığı yardım fonu ise aylık 880.000.USD ve yıllık 10.500.000.USD’dir.
+                 </p>
+               </div>
+              <div class="surec-panel">
+               <div class="saga-ok1">
+                 <img src="img/Line 23.png" alt="">
+               </div>
+
+               <div class="panel__icon">
+                 <img src="img/Frame (2).png" alt="">
+               </div>
+
+               <div class="saga-ok">
+                 <img  src="img/Line 24.png" alt=""> 
+               </div>
+              </div>
+               
+           </div>
+            
+             
+          <div class="surec-panel">
+        </div> 
+        </div>
+     </div>
+
+     <div class="surec">
+        <div class="surec-content">
+           <div class="container_surec-pr2">
+               <div class="surec-pr">
+                 <p class="text-pr">
+                  Kurum ve Kuruluşlar, tek seferlik veya kısa vadeli zekât ve sadaka yardımları yerine bu 50 proje içinden istediğini seçerek sadaka-i câriye yatırımı yapabildiği gibi ilerleyen süreçte proje tipi ve modellerinde değişikliğe gidebileceklerdir. Ayrıca bu sadaka-i câriye sistemi ile devam eden ve planlanmış yetim, eğitim, insani yardım projelerine destek imkânı da olacaktır.
+                 </p>
+               </div>
+              <div class="surec-panel">
+               <div class="saga-ok1">
+                 <img src="img/Line 23.png" alt="">
+               </div>
+
+               <div class="panel__icon">
+                 <img src="img/Frame (2).png" alt="">
+               </div>
+
+               <div class="saga-ok3">
+                 <img  src="img/Line 24.png" alt=""> 
+               </div>
+              </div>
+               
+           </div>
+            
+             
+          <div class="surec-panel">
+        </div> 
+        </div>
+     </div>
+
+         
+     <div class="surec">
+        <div class="surec-content">
+           <div class="container_surec-pr">
+               <div class="surec-pr">
+                 <p class="text-pr">
+                  T.C. Enerji Tabii Kaynaklar Bakanlığı’nın USD bazlı 10 yıl satın alma garantisi bulunmakta olup 49 yıl boyunca da USD bazlı gelir elde edilebilmektedir.
+                 </p>
+               </div>
+              <div class="surec-panel">
+               <div class="saga-ok1">
+                 <img src="img/Line 23.png" alt="">
+               </div>
+
+               <div class="panel__icon">
+                 <img src="img/Frame (2).png" alt="">
+               </div>
+
+               <div class="saga-ok">
+                 <img  src="img/Line 24.png" alt=""> 
+               </div>
+              </div>
+               
+           </div>
+            
+             
+          <div class="surec-panel">
+        </div> 
+        </div>
+     </div>
+
+     <div class="surec">
+        <div class="surec-content">
+           <div class="container_surec-pr2">
+               <div class="surec-pr">
+                 <p class="text-pr">
+                  Bu sürdürülebilir yardım fonu projesine destek veren Kuruluşlara, projelere ait görsel içerik ve raporlar ile talep edilen diğer veriler gönderilecektir.
+                 </p>
+               </div>
+              <div class="surec-panel">
+               <div class="saga-ok1">
+                 <img src="img/Line 23.png" alt="">
+               </div>
+
+               <div class="panel__icon">
+                 <img src="img/Frame(2).png" alt="">
+               </div>
+
+               <!-- <div class="saga-ok3">
+                 <img  src="Line 24.png" alt=""> 
+               </div> -->
+              </div>
+               
+           </div>
+            
+             
+          <div class="surec-panel">
+        </div> 
+        </div>
+     </div>
+    
+    
+</section>
+<section>
+  <div class="main0">
+    <div class="main2">
+      <h2 class="main3">PROJENİN KAZANIMLARI</h2>
+      <br><br>
+      <ul class="main4 ">
+        <li>
+          Doğal, temiz ve yenilenebilir enerjiden elde edilen gelir ile sürdürülebilir insani yardım faaliyetleri yapılacaktır. Bu sayede, zekât ve sadaka bağışları ile tek seferlik veya kısa vadeli insani yardım faaliyetleri, yerini sadaka-i câriye şekline dönüştürülmüş ve sürdürülebilir insani yardım modeline bırakmış olacaktır.
+        </li>
+        <br>
+        <li>
+          Barınma, beslenme, eğitim gibi birçok alanda gerekli olan uzun vadeli yatırımların fonu teminat altına alınmış olacaktır. Çünkü insani yardımın en önemli amacı, muhtaç kimseleri içinde bulundukları olumsuz şartlardan kurtarmaktır. Özellikle eğitim-öğretim faaliyetleri uzun vadeli ve büyük bütçeler gerektiren yardım alanlarıdır.
+        </li>
+        <br>
+        <li>
+          Yenilenebilir enerjinin yardım modeline dönüştürülmesi ile hem enerji üretim merkezinde hem de buradan elde edilen fonlarla yapılan eğitim, sağlık, barınma ve diğer yardım alanlarında istihdam sağlanmış olacaktır.
+        </li>
+        <br>
+        <li>
+          Yaklaşık 50 yıldan beri, insanlığın vazgeçilmez sınavı olan iklim değişikliği ve küresel ısınmaya karşı yenilenebilir enerji kaynakları kullanılmış olacak ve doğaya zarar veren fosil yakıtlar ile sera gazı etkisi azaltılmış olup gelecek kuşakların yaşamı korunmuş olacaktır.
+        </li>
+        <br>
+        <li>
+          Birleşmiş Milletler sürdürülebilir kalkınma hedeflerinden olan erişilebilirlik ve temiz enerji hedefine uygun olarak, insanlığın genel problemlerinin çözümüne katkı sağlanacaktır.
+        </li>
+        <br>
+        <li>
+          Bu sistem sayesinde insani yardım kapasitesi büyüyüp faaliyet alanları genişleyecek ve milyonlarca yetim, mazlum ve mağdur insana ulaşma imkânı ortaya çıkacaktır.
+        </li>
+        <br>
+        <li>
+          En önemlisi de bu proje, destek verenler için kıyamete kadar devam edecek bir sadaka-i cariyeye dönüşecektir.
+        </li>
+        <br>
+        <li>
+          Ülkemizin ve miletimizin yardımsever kimliğini sınırlarımızın ötesine taşıyabiliriz.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="footer-up">
+  <div class="container">
+    <div class="proje--destek">
+      <div class="simsek1">
+        <img src="img/Vector.png" alt="">
+      </div>
+      <div class="cron">
+        <p class="sn-pr">
+          SEN DE DESTEK OL, İYİLİK ENERJİNLE YAYILSIN
+        </p>
+      </div>
+      <div class="yaprak1">
+        <img src="img/Vector (1).png" alt="">
+      </div>
+     
+    </div>
+
+  </div>
+  <div class="flex">
+    <h3 class="prj73">PROJENİ SEÇ</h3>
+  </div>
+ <div class="w-prj-full">
+  <div class="w-full">
+
+    <div class="prj54" >
+     <img src="img/Vector.png" alt="" class="fbj">
+      <h4 class="cardprj">YURT İÇİ PROJELER</h4>
+      <div class="ilce">
+      <select  id="PROJELER" class="compi">
+        <option value="seciniz">Seçiniz</option>
+        <option value="0">Hayvancılık Projesi</option>
+        <option value="1">Fırın Projesi</option>
+        <option value="2">Şanlıurfa Aile Konaklama Merkezi</option>
+        <option value="3">Şanlıurfa Erkek YEtim Egitim Merkezi</option>
+        <option value="4">Şanlıurfa Kız YEtim Egitim Merkezi</option>
+        <option value="5">Gaziantep Yetim Egitim Merkezi</option>
+        <option value="6">Şanlıurfa Aşevi Projesi</option>
+        <option value="7">Arama Kurtarma </option>
+        <option value="8">Psikososyal Destek Projesi</option>
+        <option value="9">Mülteci Sağlık Merkezi</option>
+        <option value="10">Doğu Türkistanlı Mülteci Uyum Merkezi</option>
+        <option value="11">Ankara Uluslararası Öğrenci Etkileşim & Kültür Merkezi</option>
+        <option value="12">İstanbul Eyüp Sultan Kültür Merkezi</option>
+        <option value="13">Uluslararası Öğrenci Burs Yardımı</option>
+        <option value="14">İstanbul Uluslararası Öğrenci Merkezi</option>
+        <option value="15">Burdur Gençlik Ve Eğitim Merkezi</option>
+        <option value="16">Reyhanlı Eğitim Merkezi</option>
+        <option value="17">Kıbrıs Eğitim Merkezi</option>
+        <option value="18">Mardin Eğitim Merkez</option>
+        <option value="19">Şırnak Eğitim Merkezi</option>
+        <option value="20">Kahramanmaraş Eğitim Merkezi</option>
+        <option value="21">Kahramanmaraş Hafızlık Merkezi</option>
+        <option value="22">Gaziantep Hafızlık Merkezi</option>
+        <option value="23">Uluslararası Hafızlık Merkezi</option>
+        <option value="24">İnsani Yardım İnovasyon Merkezi</option>
+
+      </select>
+    </div>
+    <div class="buton--d">
+      <button class="buton">Destek Ol</button>
+    </div>
+    </div>
+    
+
+    <div class="prj12">
+        <img src="img/Vector.png" alt="" class="fbj34">
+        <h4 class="cardprj">YURT DIŞI PROJELER</h4>
+      <div class="ilce">
+        <select  id="PROJELER" class="compi">
+          <option value="seciniz">Seçiniz</option>
+          <option value="0">Dünya Kur’an Okuyor Projesi</option>
+          <option value="1">Suriye Koordinasyon Merkezi</option>
+          <option value="2">TukTuk Aracı Projesi</option>
+          <option value="3">3 Keçi 1 Teke Projesi</option>
+          <option value="4">Dikiş Nakış Eğitim ve Destek</option>
+          <option value="5">Sri Lanka Acil Yardım</option>
+          <option value="6">Suriye Aşevi Projesi</option>
+          <option value="7"> Filistin Yardım Projesi </option>
+          <option value="8">Afganistan Yardım Projesi</option>
+          <option value="9">Yemen Yardım Projesi</option>
+          <option value="10">Yemen Yetim Hamilği</option>
+          <option value="11">Afrika Cami, Mescid Projeleri</option>
+          <option value="12">İdlib Erkek Yetim Eğitim Merkezi</option>
+          <option value="13">İdlib Kız Yetim Eğitim Merkezi</option>
+          <option value="14">Azez Erkek Yetim Eğitim Merkezi</option>
+          <option value="15">Cerablus Erkek Yetim Eğitim Merkezi</option>
+          <option value="16">Filistin Yetim Eğitim Merkezi</option>
+          <option value="17">Endonezya Yetim Eğitim Merkezi</option>
+          <option value="18">Senegal Yetim Eğitim Merkezi</option>
+          <option value="19">Sudan Yetim Eğitim Merkezi</option>
+          <option value="20">Kenya Yetim Eğitim Merkez</option>
+          <option value="21">Burkina Faso Yetim Eğitim Merkezi</option>
+          <option value="22">Tanzanya Yetim Eğitim Merkezi</option>
+          <option value="23">Afrika Katarakt Projesi</option>
+          <option value="24">Suriye Sağlık Merkezi</option>
+  
+        </select>
+      </div>
+      <div class="buton--d">
+        <button class="buton">Destek Ol</button>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+<footer class="son">
+<div class="end">
+  <div class="footer--iey--logo">
+    <div class="logo1">
+      <img src="img/Frame (3).png" class="">
+    </div>
+    <div class="line">
+      <img src="img/Line 38.png" alt="">
+    </div>
+    <div class="logo2">
+      <img src="img/Frame (4).png" alt="" >
+    </div>
+  </div>
+  <div class="footer--iey--linkler">
+    <ul class="satır">
+      <li>Ana Sayfa</li>
+      <li>Şühedanın İzinde 500 Su Kuyusu</li>
+      <li>İyilik Kapısı</li>
+      <li>İyilik Enerjinle Yayılsın</li>
+
+    </ul>
+  </div>
+</div>
+</footer>
+
+  
+</body>
+</html>
